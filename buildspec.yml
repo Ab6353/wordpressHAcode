@@ -1,0 +1,23 @@
+version: 0.2
+
+run-as: root
+
+env:
+   parameter-store:
+      DB_NAME: "/ashutosh/wordpress/db_un"
+      DB_HOST: "/ashutosh/wordpress/db_host"
+      DB_USER: "/ashutosh/wordpress/db_user"
+      DB_PASSWD: "/ashutosh/wordpress/db_pass"
+      
+phases:
+     
+     build:
+     commands:
+            - sed -i 's/database_name_here/'$DB_NAME'/' wp-config.php
+            - sed -i 's/username_here/'$DB_USER'/' wp-config.php
+            - sed -i 's/password_here/'$DB_PASSWORD'/' wp-config.php
+            - sed -i 's/localhost/'$DB_HOST'/' wp-config.php
+
+artifacts:
+        files:
+           - '**/*'
