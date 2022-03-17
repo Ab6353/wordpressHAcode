@@ -4,7 +4,7 @@ run-as: root
 
 env:
    parameter-store:
-      DB_NAME: "/ashutosh/wordpress/db_un"
+      DB_NAME: "/ashutosh/wordpress/db_name"
       DB_HOST: "/ashutosh/wordpress/db_host"
       DB_USER: "/ashutosh/wordpress/db_user"
       DB_PASSWD: "/ashutosh/wordpress/db_pass"
