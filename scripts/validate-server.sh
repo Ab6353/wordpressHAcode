@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl localhost:81
+curl 3.110.55.240
