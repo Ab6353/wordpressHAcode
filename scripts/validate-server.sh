@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "hi"
+curl wpcicd.squareops.co.in
