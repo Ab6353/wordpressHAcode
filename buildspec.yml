@@ -7,7 +7,7 @@ env:
       DB_NAME: "/ashutosh/wordpress/db_name"
       DB_HOST: "/ashutosh/wordpress/db_host"
       DB_USER: "/ashutosh/wordpress/db_user"
-      DB_PASSWD: "/ashutosh/wordpress/db_pass"
+      DB_PASSWORD: "/ashutosh/wordpress/db_pass"
       
 phases:
      
