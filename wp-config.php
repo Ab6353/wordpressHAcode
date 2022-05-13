@@ -1,7 +1,7 @@
 <?php
-#define( 'WP_HOME', 'https://wpcicd.squareops.co.in' );
-#define( 'WP_SITEURL', 'https://wpcicd.squareops.co.in' );
-#if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
+define( 'WP_HOME', 'https://domain.com' );
+define( 'WP_SITEURL', 'https://domain.com' );
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
 /**
  * The base configuration for WordPress
  *
