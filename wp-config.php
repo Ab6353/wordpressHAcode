@@ -1,7 +1,7 @@
 <?php
-define( 'WP_HOME', 'https://wpcicd.squareops.co.in' );
-define( 'WP_SITEURL', 'https://wpcicd.squareops.co.in' );
-if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
+#define( 'WP_HOME', 'https://wpcicd.squareops.co.in' );
+#define( 'WP_SITEURL', 'https://wpcicd.squareops.co.in' );
+#if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['HTTPS']='on';
 /**
  * The base configuration for WordPress
  *
@@ -23,16 +23,16 @@ if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)   $_SERVER['H
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'db_name' );
 
 /** Database username */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'db_user' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'squareops' );
+define( 'DB_PASSWORD', 'db_pass' );
 
 /** Database hostname */
-define( 'DB_HOST', 'wp-server-cicd-ashutosh.cfdyrms3ajre.ap-south-1.rds.amazonaws.com' );
+define( 'DB_HOST', 'db_host' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
